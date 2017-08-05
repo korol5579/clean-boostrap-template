@@ -4,22 +4,46 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 body {
-  color: #313131;
+  color: #616161;
+  font-family: 'poppins', helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 27px;
+  font-weight: 400;
+  text-align: center;
+  overflow-x: hidden !important;
 }
 nav {
   background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 nav .container {
   min-height: 75px;
 }
 header {
-  background-color: #3f4049;
+  background: #3f4049 url(../img/bg/header.jpg) no-repeat top;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
 }
 header .container {
   min-height: 775px;
 }
+section {
+  position: relative;
+}
+.dark-bg-overlay {
+  background-color: rgba(38, 39, 50, 0.85);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
 .lp-title {
-  text-align: center;
+  font-family: 'Libre Baskerville', 'Playfair Display', Georgia, serif;
 }
 .lp-title-light {
   color: #fff;
@@ -32,14 +56,15 @@ header .container {
   font-size: 20px;
 }
 h1.lp-title {
-  font-size: 65px;
-  line-height: 75px;
-  width: 770px;
-  margin: 170px auto 50px;
+  font-size: 60px;
+  line-height: 85px;
+  width: 830px;
+  margin: 240px auto 60px;
 }
 h2.lp-title {
   font-size: 60px;
   margin: 130px auto 25px;
+  font-weight: 600;
 }
 #about-us {
   background-color: #ffffff;
@@ -72,7 +97,7 @@ h2.lp-title {
   min-height: 1229px;
 }
 #company-progress {
-  background: url(../img/cofee-bg.jpg) center center;
+  background: url(../img/bg/cofee.jpg) center center;
 }
 #company-progress .container {
   min-height: 462px;

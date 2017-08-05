@@ -2,11 +2,22 @@
 @import "mixins.less";
 
 body {
-	color: @dark-font-color;
+	color: @gray-font-color;
+	font-family: 'poppins', helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 27px;
+	font-weight: 400;
+	text-align: center;
+	overflow-x: hidden !important; 
 }
+
 
 nav {
 	background-color: @light-bg;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2;
 	
 	.container {
 		min-height: 75px;
@@ -14,7 +25,11 @@ nav {
 }
 
 header {
-	background-color: @dark-bg;
+	background: @dark-bg url(../img/bg/header.jpg) no-repeat top;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+
 
 	.container {
 		min-height: 775px;
@@ -22,8 +37,23 @@ header {
 
 }
 
+section {
+  	position: relative;
+}
+
+
+.dark-bg-overlay {
+	background-color: rgba(38, 39, 50, 0.85);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+
 .lp-title {
-	text-align: center;
+	 font-family: 'Libre Baskerville', 'Playfair Display', Georgia, serif;
 }
 
 .lp-title-light {
@@ -40,20 +70,18 @@ header {
 }
 
 h1.lp-title {
-	font-size: 65px;
-	line-height: 75px;
-    width: 770px;
-    margin: 170px auto 50px;
+    font-size: 60px;
+    line-height: 85px;
+    width: 830px;
+    margin: 240px auto 60px;
 }
 
 
 h2.lp-title {
 	font-size: 60px;
     margin: 130px auto 25px;
+    font-weight: 600;
 }
-
-
-
 
 
 #about-us {
@@ -105,7 +133,7 @@ h2.lp-title {
 
 
 #company-progress {
-	background: url(../img/cofee-bg.jpg) center center;
+	background: url(../img/bg/cofee.jpg) center center;
 
 	.container {
 		min-height: 462px;
