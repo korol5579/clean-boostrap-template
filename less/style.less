@@ -35,10 +35,65 @@ header {
 		min-height: 775px;
 	}
 
+	.lp-btn {
+	    padding: 10px 40px;
+	    text-transform: uppercase;
+	    border-radius: 30px;
+	    color: #ffffff;
+	    font-size: 16px;
+	    font-weight: 500;
+	}
+	
+	a:hover {
+		text-decoration: none;
+	}
 }
+
+.orange-bg {
+	background-color: @orange-theme;
+}
+
+.green-bg {
+	background-color: @green-theme;
+}
+
 
 section {
   	position: relative;
+}
+
+
+#logo {
+	max-height: 27px;
+	margin-top: 8px;
+}
+
+#lp-nav {
+	a {
+		padding: 15px 15px;
+		line-height: 45px;
+		color: @dark-font-color;
+    	font-weight: 500;
+    	font-size: 14px;
+	}
+
+	a:hover {
+		color: @orange-theme;
+		background-color: #fff;
+	}
+
+	li.active {
+		
+		a {
+			color: @orange-theme;
+			background-color: #fff;
+		}
+		
+	}
+}
+
+.navbar {
+	margin-bottom: 0;
 }
 
 
@@ -73,7 +128,7 @@ h1.lp-title {
     font-size: 60px;
     line-height: 85px;
     width: 830px;
-    margin: 240px auto 60px;
+    margin: 160px auto 60px;
 }
 
 

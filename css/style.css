@@ -31,8 +31,47 @@ header {
 header .container {
   min-height: 775px;
 }
+header .lp-btn {
+  padding: 10px 40px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+}
+header a:hover {
+  text-decoration: none;
+}
+.orange-bg {
+  background-color: #fc5f45;
+}
+.green-bg {
+  background-color: #38c695;
+}
 section {
   position: relative;
+}
+#logo {
+  max-height: 27px;
+  margin-top: 8px;
+}
+#lp-nav a {
+  padding: 15px 15px;
+  line-height: 45px;
+  color: #313131;
+  font-weight: 500;
+  font-size: 14px;
+}
+#lp-nav a:hover {
+  color: #fc5f45;
+  background-color: #fff;
+}
+#lp-nav li.active a {
+  color: #fc5f45;
+  background-color: #fff;
+}
+.navbar {
+  margin-bottom: 0;
 }
 .dark-bg-overlay {
   background-color: rgba(38, 39, 50, 0.85);
@@ -59,7 +98,7 @@ h1.lp-title {
   font-size: 60px;
   line-height: 85px;
   width: 830px;
-  margin: 240px auto 60px;
+  margin: 160px auto 60px;
 }
 h2.lp-title {
   font-size: 60px;
