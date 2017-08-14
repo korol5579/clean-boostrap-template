@@ -32,12 +32,20 @@ header .container {
   min-height: 775px;
 }
 header .lp-btn {
-  padding: 10px 40px;
+  transition: all 0.25s;
+  padding: 0 40px;
   text-transform: uppercase;
   border-radius: 30px;
-  color: #ffffff;
+  color: #fff;
   font-size: 16px;
   font-weight: 500;
+  margin: 10px;
+  line-height: 50px;
+}
+header .lp-btn:hover,
+header .lp-btn:visited,
+header .lp-btn:focus {
+  color: #fff;
 }
 header a:hover {
   text-decoration: none;
@@ -45,8 +53,14 @@ header a:hover {
 .orange-bg {
   background-color: #fc5f45;
 }
+.orange-bg:hover {
+  background-color: #fb4122;
+}
 .green-bg {
   background-color: #38c695;
+}
+.green-bg:hover {
+  background-color: #30aa80;
 }
 section {
   position: relative;
@@ -66,6 +80,10 @@ section {
   color: #fc5f45;
   background-color: #fff;
 }
+#lp-nav a:visited,
+#lp-nav a:focus {
+  background-color: #fff;
+}
 #lp-nav li.active a {
   color: #fc5f45;
   background-color: #fff;
@@ -75,11 +93,6 @@ section {
 }
 .dark-bg-overlay {
   background-color: rgba(38, 39, 50, 0.85);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
 }
 .lp-title {
   font-family: 'Libre Baskerville', 'Playfair Display', Georgia, serif;
@@ -98,7 +111,7 @@ h1.lp-title {
   font-size: 60px;
   line-height: 85px;
   width: 830px;
-  margin: 160px auto 60px;
+  margin: 160px auto 35px;
 }
 h2.lp-title {
   font-size: 60px;
