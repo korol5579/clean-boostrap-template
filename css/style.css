@@ -190,7 +190,7 @@ h3.lp-title {
 #our-focus .container {
   min-height: 825px;
 }
-#our-focus .lp-item {
+.lp-item {
   background-color: #ffffff;
   min-height: 350px;
   width: 100%;
@@ -200,16 +200,16 @@ h3.lp-title {
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.05);
   transition: all 0.5s;
 }
-#our-focus .lp-item:hover {
+.lp-item:hover {
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
 }
-#our-focus .lp-item .lp-title {
+.lp-item .lp-title {
   font-size: 20px;
   line-height: 33px;
   font-weight: 500;
   font-family: inset;
 }
-#our-focus .lp-item .icon {
+.lp-item .icon {
   font-size: 55px;
   margin-bottom: 20px;
   display: block;
@@ -246,8 +246,16 @@ h3.lp-title {
 #our-team .container {
   min-height: 1229px;
 }
+#our-team .lp-item {
+  padding: 3px;
+}
+#our-team .team-member img {
+  max-width: 100%;
+}
 #company-progress {
-  background: url(../img/bg/cofee.jpg) center center;
+  background: url(../img/bg/cofee.jpg) no-repeat center top;
+  background-attachment: fixed;
+  background-size: cover;
 }
 #company-progress .container {
   min-height: 462px;
