@@ -22,11 +22,18 @@ nav {
 nav .container {
   min-height: 75px;
 }
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
 header {
   background: #3f4049 url(../img/bg/header.jpg) no-repeat top;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
+  margin-top: 75px;
 }
 header .container {
   min-height: 775px;
@@ -40,7 +47,7 @@ header .lp-btn {
   font-size: 16px;
   font-weight: 500;
   margin: 10px;
-  line-height: 50px;
+  line-height: 48px;
 }
 header .lp-btn:hover,
 header .lp-btn:visited,
@@ -50,20 +57,46 @@ header .lp-btn:focus {
 header a:hover {
   text-decoration: none;
 }
+.header-btn {
+  margin-bottom: 60px;
+}
 .orange-bg {
   background-color: #fc5f45;
 }
 .orange-bg:hover {
   background-color: #fb4122;
 }
+.orange-text {
+  color: #feb960;
+}
 .green-bg {
   background-color: #38c695;
+}
+.green-text {
+  color: #38c695;
+}
+.green-text:hover {
+  color: #30aa80;
 }
 .green-bg:hover {
   background-color: #30aa80;
 }
+.purple-text {
+  color: #b27cf5;
+}
 section {
   position: relative;
+}
+.icons-wrapper p {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+}
+.icons-wrapper span {
+  font-size: 45px;
+  margin-bottom: 28px;
+  padding: 10px;
 }
 #logo {
   max-height: 27px;
@@ -118,6 +151,13 @@ h2.lp-title {
   margin: 130px auto 25px;
   font-weight: 600;
 }
+h3.lp-title {
+  font-size: 30px;
+  margin: 144px auto 25px;
+  font-weight: 400;
+  color: #fff;
+  font-family: unset;
+}
 #about-us {
   background-color: #ffffff;
 }
@@ -130,11 +170,25 @@ h2.lp-title {
 #our-focus .container {
   min-height: 825px;
 }
-#our-awesome {
-  background-color: #3f4049;
+#our-awesomeness {
+  background: #3f4049 url(../img/bg/awesomeness.jpg) no-repeat top;
+  background-size: cover;
+  background-attachment: fixed;
 }
-#our-awesome .container {
+#our-awesomeness .container {
   min-height: 500px;
+}
+#our-awesomeness .play-btn {
+  font-size: 80px;
+  margin-bottom: 40px;
+  display: block;
+}
+#our-awesomeness a {
+  transition: all 0.25s;
+}
+#our-awesomeness p {
+  color: #fff;
+  display: block;
 }
 #portfolio {
   background-color: #ffffff;
