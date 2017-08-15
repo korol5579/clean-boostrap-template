@@ -18,6 +18,7 @@ nav {
     top: 0;
     width: 100%;
     z-index: 2;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.25);
 
     .container {
         min-height: 75px;
@@ -67,7 +68,7 @@ header {
 }
 
 .header-btn {
-	    margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .orange-bg {
@@ -79,7 +80,19 @@ header {
 }
 
 .orange-text {
-	color: @light-orange-theme;
+    color: @orange-theme;
+}
+
+.border-orange {
+	border-bottom: 3px solid @orange-theme;
+}
+
+.light-orange-text {
+    color: @light-orange-theme;
+}
+
+.border-light-orange {
+	border-bottom: 3px solid @light-orange-theme;
 }
 
 .green-bg {
@@ -88,6 +101,10 @@ header {
 
 .green-text {
     color: @green-theme;
+}
+
+.border-green {
+	border-bottom: 3px solid @green-theme;
 }
 
 .green-text:hover {
@@ -99,7 +116,11 @@ header {
 }
 
 .purple-text {
-	color: @purple-theme;
+    color: @purple-theme;
+}
+
+.border-purple {
+	border-bottom: 3px solid @purple-theme;
 }
 
 section {
@@ -107,18 +128,21 @@ section {
 }
 
 .icons-wrapper {
-    
+
+    margin-top: 65px;
+    display: block;
+
     p {
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 26px;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
     }
 
     span {
-    font-size: 45px;
-    margin-bottom: 28px;
-    padding: 10px;
+        font-size: 45px;
+        margin-bottom: 28px;
+        padding: 10px;
     }
 }
 
@@ -168,6 +192,7 @@ section {
 
 .lp-title {
     font-family: 'Libre Baskerville', 'Playfair Display', Georgia, serif;
+	
 }
 
 .lp-title-light {
@@ -219,7 +244,38 @@ h3.lp-title {
     .container {
         min-height: 825px;
     }
+
+    .lp-item {
+        background-color: #ffffff;
+        min-height: 350px;
+        width: 100%;
+        padding-left: 27px;
+        padding-right: 28px;
+        padding-top: 60px;
+        box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.05);
+        transition: all 0.5s;
+
+        &:hover {
+        	box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+			
+        }
+		
+		.lp-title {
+			font-size: 20px;
+		    line-height: 33px;
+		    font-weight: 500;
+		    font-family: inset;
+		}
+
+        .icon {
+            font-size: 55px;
+            margin-bottom: 20px;
+            display: block;
+        }
+    }
 }
+
+
 
 #our-awesomeness {
     background: @dark-bg url(../img/bg/awesomeness.jpg) no-repeat top;
