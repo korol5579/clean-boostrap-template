@@ -376,10 +376,17 @@ h3.lp-title {
   margin-bottom: 12px;
 }
 #testimonials {
-  background-color: #3f4049;
+  background: #3f4049 url(../img/bg/testimonials.jpg) no-repeat top;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  margin-top: 75px;
 }
 #testimonials .container {
   min-height: 874px;
+}
+#testimonials .lp-description {
+  color: #ffffff;
 }
 #why-select-us {
   background-color: #ffffff;

@@ -495,10 +495,19 @@
 
 
     #testimonials {
-        background-color: @dark-bg;
+        background: @dark-bg url(../img/bg/testimonials.jpg) no-repeat top;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        margin-top: 75px;
+
 
         .container {
             min-height: 874px;
+        }
+
+        .lp-description {
+        	color: #ffffff;
         }
     }
 
