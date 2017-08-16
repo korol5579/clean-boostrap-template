@@ -249,6 +249,15 @@ h3.lp-title {
 #our-team .lp-item {
   padding: 3px;
 }
+#our-team .lp-item .lp-title {
+  font-family: inherit;
+  margin-top: 20px;
+  display: block;
+  font-size: 18px;
+}
+#our-team .lp-item p {
+  font-size: 13px;
+}
 #our-team .team-member img {
   max-width: 100%;
 }
