@@ -172,7 +172,7 @@
 
         span {
             font-size: 45px;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             padding: 5px;
             display: block;
         }
@@ -378,7 +378,22 @@
             color: #fff;
             display: block;
         }
+
+        .youtube-video {
+            display: none;
+        }
+
+        a.play-btn {
+
+            &:hover,
+            &:focus,
+            &:visited {
+                text-decoration: none;
+                color: @green-theme;
+            }
+        }
     }
+
 
     #portfolio {
         background-color: @light-bg;
@@ -388,6 +403,48 @@
         }
     }
 
+    .portfolio-overlay {
+        border: 5px solid #fff;
+        overflow: hidden;
+
+        img {
+            max-width: 100%;
+        }
+
+        .portfolio-description {
+            background-color: #ffffff;
+            position: absolute;
+            bottom: -50px;
+            width: 100%;
+            height: 50px;
+            transition: all 0.5s;
+        }
+
+        .icon {
+            opacity: 0;
+            position: absolute;
+            left: 50%;
+            top: 100px;
+            font-size: 60px;
+            color: #fff;
+            margin-left: -30px;
+            transition: all 0.5s;
+        }
+
+        &:hover {
+            box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.05);
+
+            .portfolio-description {
+                bottom: 0;
+            }
+
+
+            .icon {
+                display: block;
+                opacity: 1;
+            }
+        }
+    }
 
 
 
@@ -507,7 +564,7 @@
         }
 
         .lp-description {
-        	color: #ffffff;
+            color: #ffffff;
         }
     }
 
@@ -569,4 +626,29 @@
         .container {
             min-height: 1276px;
         }
+    }
+
+    #contact-form {
+        input {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #efefef;
+            border-radius: 4px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #efefef;
+            border-radius: 4px;
+        }
+    }
+
+    .footer {
+        min-height: 200px;
+        background-color: rgba(38, 39, 50, 0.85);
+        position: relative;
     }

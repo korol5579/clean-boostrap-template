@@ -41,29 +41,29 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="lp-nav">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Process</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul class="nav navbar-nav navbar-right smooth-scroll active-scroll">
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#about-us">About</a></li>
+                    <li><a href="#our-focus">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#our-team">Team</a></li>
+                    <li><a href="#work-steps">Process</a></li>
+                    <li><a href="#pricing-table">Pricing</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#our-blog">Blog</a></li>
+                    <li><a href="#get-in-touch">Contact</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
     </nav>
-    <header>
+    <header id="home">
         <div class="dark-bg-overlay">
             <div class="container">
                 <h1 class="lp-title lp-title-light wow slideInDown">We design things with love and passion.</h1>
-                <div class="header-btn">
-                    <a href="#" class="btn lp-btn orange-bg">Our works</a>
-                    <a href="#" class="btn lp-btn green-bg">Services</a>
+                <div class="header-btn smooth-scroll">
+                    <a href="#portfolio" class="btn lp-btn orange-bg">Our works</a>
+                    <a href="#our-focus" class="btn lp-btn green-bg">Services</a>
                 </div>
                 <div class="icons-wrapper">
                     <div class="row">
@@ -154,8 +154,13 @@
         <div class="dark-bg-overlay">
             <div class="container">
                 <h3 class="lp-title">Explore Our Awesomeness</h3>
+                <div class="youtube-video row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <iframe width="100%" height="450" src="https://www.youtube.com/embed/53dQfwNQQbs?ecver=1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
                 <a class="play-btn green-text" href="#"><span class="icon icon-music-play-button"></span></a>
-                <p>Click to play the video</p>
+                <p class="play-action">Click to play the video</p>
             </div>
         </div>
     </section>
@@ -166,7 +171,17 @@
             </h2>
             <p class="lp-description">We understand your requirement and provide quality works.</p>
             <div class="row">
-                <div class="col-md-4">1</div>
+                <div class="col-md-4">
+                    <div class="portfolio-overlay">
+                        <img src="img/projects/1.jpg" alt="">
+                        <span class="icon icon-plus"></span>
+                        <div class="portfolio-description">
+                            <p>Project One</p>
+                            <div class="four-lines">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-md-4">3</div>
                 <div class="col-md-4">4</div>
                 <div class="col-md-4">5</div>
@@ -399,9 +414,28 @@
                     </form>
                 </div>
             </div>
+            <div class="row footer">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-3">
+                </div>
+                <div class="four-lines">
+                            <div class="line border-orange">
+                            </div>
+                            <div class="line border-green">
+                            </div>
+                            <div class="line border-purple">
+                            </div>
+                            <div class="line border-light-orange">
+                            </div>
+                        </div>
+            </div>
+        </div>
     </section>
-    <footer>
-    </footer>
     <!-- WOW js -->
     <script src="js/wow.js"></script>
     <script>
@@ -409,6 +443,7 @@
     </script>
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/jquery.nav.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <!-- Theme JavaScript -->
