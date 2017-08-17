@@ -138,6 +138,14 @@ ul {
 .border-purple {
   border-bottom: 3px solid #b27cf5;
 }
+.purple-border-outline {
+  color: #b27cf5 !important;
+  border: 2px solid #b27cf5;
+}
+.purple-border-outline:hover {
+  color: #ffffff !important;
+  background-color: #b27cf5;
+}
 section {
   position: relative;
 }
@@ -443,6 +451,10 @@ h3.lp-title {
 #pricing-table ul li {
   margin-top: 12px;
   margin-bottom: 12px;
+}
+.white-small-text {
+  font-size: 13px;
+  color: #fff;
 }
 #testimonials {
   background: #3f4049 url(../img/bg/testimonials.jpg) no-repeat top;
