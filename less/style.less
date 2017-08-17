@@ -131,6 +131,27 @@
         box-shadow: 0px 0px 0px 3px @green-theme;
     }
 
+    .price-circle-orange {
+    	background: @orange-theme;
+        width: 106px;
+        height: 106px;
+        margin: auto;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        box-shadow: 0px 0px 0px 3px @orange-theme;
+    }
+
+    .price-circle-purple {
+    	background: @purple-theme;
+        width: 106px;
+        height: 106px;
+        margin: auto;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        box-shadow: 0px 0px 0px 3px @purple-theme;
+    	
+    }
+
 
     .border-green {
         border-bottom: 3px solid @green-theme;
@@ -153,6 +174,17 @@
     .border-purple {
         border-bottom: 3px solid @purple-theme;
     }
+
+    .purple-border-outline {
+    	color: @purple-theme !important;
+        border: 2px solid @purple-theme;
+
+        &:hover {
+            color: #ffffff !important;
+            background-color: @purple-theme;
+        }
+    }
+ 
 
     section {
         position: relative;
@@ -431,6 +463,15 @@
             transition: all 0.5s;
         }
 
+        .four-lines {
+        	display: none;
+
+        	&:hover {
+        		display: inline;
+        		width: 100%;
+        	}
+        }
+
         &:hover {
             box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.05);
 
@@ -651,4 +692,8 @@
         min-height: 200px;
         background-color: rgba(38, 39, 50, 0.85);
         position: relative;
+    }
+
+    .strong {
+    	font-weight: 500;
     }
