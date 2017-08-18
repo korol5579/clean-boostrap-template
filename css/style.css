@@ -494,10 +494,6 @@ h3.lp-title {
   position: relative;
   margin-top: 75px;
 }
-#testimonials .item {
-  padding: 10px;
-  display: inline-block;
-}
 #testimonials .signature img {
   width: 170px;
   margin-top: 40px;
@@ -506,18 +502,17 @@ h3.lp-title {
 #testimonials .testimonial-content {
   text-align: left;
   padding: 50px 50px 50px 50px;
-  margin-left: -15px;
   margin-top: 40px;
 }
 #testimonials .testimonial-content p {
   margin-bottom: 0;
 }
 #testimonials .testimonial-content .four-lines {
-  left: -15px;
   padding-right: 0;
 }
 #testimonials .image-wrapper {
   box-shadow: inset 0 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-left: 15px;
   position: absolute;
   top: 0;
   left: 0;
