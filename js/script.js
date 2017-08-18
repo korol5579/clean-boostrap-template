@@ -37,5 +37,12 @@ $(document).ready(function() {
         filter: ':not(.external)'
     });
 
+    // Owl carousel
+    $('.owl-carousel').owlCarousel({
+        navigation: false, // Show next and prev buttons
+        slideSpeed: 300,
+        paginationSpeed: 400,
+        singleItem: true
+    });
 
 });
