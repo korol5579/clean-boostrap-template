@@ -45,6 +45,9 @@ header a:hover {
 ul {
   list-style-type: none;
 }
+.uppercase {
+  text-transform: uppercase;
+}
 .header-btn {
   margin-bottom: 60px;
 }
@@ -592,6 +595,14 @@ h3.lp-title {
 }
 #our-blog .container {
   min-height: 1150px;
+}
+#our-blog .blog-posts .post-info {
+  margin-top: -50px;
+  position: relative;
+  padding-left: 50px;
+}
+#our-blog .blog-posts .post-info div {
+  margin-right: 20px;
 }
 #our-blog .post-img img {
   width: 100%;
