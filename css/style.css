@@ -510,6 +510,9 @@ h3.lp-title {
 #testimonials .testimonial-content .four-lines {
   padding-right: 0;
 }
+#testimonials .owl-pagination {
+  text-align: right;
+}
 #testimonials .image-wrapper {
   box-shadow: inset 0 0 0 10px rgba(0, 0, 0, 0.2);
   margin-left: 15px;
@@ -589,6 +592,9 @@ h3.lp-title {
 }
 #our-blog .container {
   min-height: 1150px;
+}
+#our-blog .post-img img {
+  width: 100%;
 }
 #subscribe-to-newsletter {
   background-color: #ffffff;
