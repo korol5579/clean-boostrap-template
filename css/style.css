@@ -502,9 +502,31 @@ h3.lp-title {
 }
 #subscribe-to-newsletter {
   background-color: #ffffff;
+  padding-top: 120px;
 }
 #subscribe-to-newsletter .container {
   min-height: 424px;
+}
+#subscribe-to-newsletter input {
+  border: 2px solid #efefef;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 0 20px 0 27px;
+  width: 300px;
+  background: #f7f7f7;
+  line-height: 46px;
+}
+#subscribe-to-newsletter h3 {
+  font-size: 30px;
+  line-height: 48px;
+  font-weight: 400;
+  color: #313131;
+}
+#subscribe-to-newsletter .lp-btn {
+  margin-left: 0;
+}
+#subscribe-to-newsletter .subscribe-form {
+  margin-top: 30px;
 }
 #get-in-touch {
   background: #cccccc url(../img/bg/footer.jpg) no-repeat top;
@@ -536,6 +558,16 @@ h3.lp-title {
 }
 .footer img {
   max-height: 38px;
+}
+.footer h4 {
+  text-align: left;
+  margin-bottom: 30px;
+}
+.footer .lp-description {
+  font-size: 15px;
+  line-height: 27px;
+  color: #fff;
+  text-align: left;
 }
 .strong {
   font-weight: 500;

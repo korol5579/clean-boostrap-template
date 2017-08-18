@@ -132,7 +132,7 @@
     }
 
     .price-circle-orange {
-    	background: @orange-theme;
+        background: @orange-theme;
         width: 106px;
         height: 106px;
         margin: auto;
@@ -142,14 +142,13 @@
     }
 
     .price-circle-purple {
-    	background: @purple-theme;
+        background: @purple-theme;
         width: 106px;
         height: 106px;
         margin: auto;
         border-radius: 50%;
         border: 3px solid #fff;
         box-shadow: 0px 0px 0px 3px @purple-theme;
-    	
     }
 
 
@@ -176,7 +175,7 @@
     }
 
     .purple-border-outline {
-    	color: @purple-theme !important;
+        color: @purple-theme !important;
         border: 2px solid @purple-theme;
 
         &:hover {
@@ -184,7 +183,7 @@
             background-color: @purple-theme;
         }
     }
- 
+
 
     section {
         position: relative;
@@ -464,12 +463,12 @@
         }
 
         .four-lines {
-        	display: none;
+            display: none;
 
-        	&:hover {
-        		display: inline;
-        		width: 100%;
-        	}
+            &:hover {
+                display: inline;
+                width: 100%;
+            }
         }
 
         &:hover {
@@ -592,10 +591,10 @@
     }
 
 
-.white-small-text {
-	font-size: 13px;
-    color: #fff;
-}
+    .white-small-text {
+        font-size: 13px;
+        color: #fff;
+    }
 
     #testimonials {
         background: @dark-bg url(../img/bg/testimonials.jpg) no-repeat top;
@@ -657,10 +656,38 @@
 
     #subscribe-to-newsletter {
         background-color: @light-bg;
+        padding-top: 120px;
 
         .container {
             min-height: 424px;
         }
+
+        input {
+            border: 2px solid #efefef;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            padding: 0 20px 0 27px;
+            width: 300px;
+            background: #f7f7f7;
+            line-height: 46px;
+        }
+
+         h3 {
+            font-size: 30px;
+            line-height: 48px;
+            font-weight: 400;
+            color: @dark-font-color;
+        }
+
+        .lp-btn {
+            margin-left: 0;
+        }
+
+        .subscribe-form {
+            margin-top: 30px;
+        }
+
+
     }
 
 
@@ -700,10 +727,22 @@
         padding-top: 90px;
 
         img {
-        	max-height: 38px;
+            max-height: 38px;
+        }
+
+        h4 {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .lp-description {
+            font-size: 15px;
+            line-height: 27px;
+            color: #fff;
+            text-align: left;
         }
     }
 
     .strong {
-    	font-weight: 500;
+        font-weight: 500;
     }
