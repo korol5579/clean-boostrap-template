@@ -359,18 +359,19 @@ h3.lp-title {
 }
 #work-steps .step-item {
   position: relative;
+  min-height: 300px;
 }
 #work-steps .step-item img {
   width: 100%;
 }
 #work-steps .step-item .left-block {
-  left: -293px;
-  top: -50px;
+  left: 0;
+  top: 0;
   padding-left: 120px;
 }
 #work-steps .step-item .right-block {
-  right: -293px;
-  top: -50px;
+  right: 0;
+  top: 0;
   padding-right: 120px;
 }
 #work-steps .step-item .absolute-block {
@@ -381,6 +382,7 @@ h3.lp-title {
   width: 458px;
   height: 300px;
   text-align: left;
+  max-width: 100%;
 }
 #pricing-table {
   background-color: #f7f7f7;
@@ -508,6 +510,7 @@ h3.lp-title {
 }
 #why-select-us .row p {
   width: 320px;
+  max-width: 100%;
 }
 #why-select-us .row h3.lp-title {
   color: #313131;
@@ -802,9 +805,13 @@ h3.lp-title {
   color: #ffffff !important;
   background-color: #b27cf5;
 }
-@media (min-width: 768px) {
-  #work-steps .step-item .left-block,
+@media (min-width: 992px) {
+  #work-steps .step-item .left-block {
+    left: -293px;
+    top: -50px;
+  }
   #work-steps .step-item .right-block {
-    left: 0;
+    right: -293px;
+    top: -50px;
   }
 }
