@@ -1,4 +1,4 @@
-    @import "variables.less";
+@import "variables.less";
     @import "mixins.less";
 
     body {
@@ -83,118 +83,7 @@
         color: #fff;
     }
 
-    .orange-bg {
-        background-color: @orange-theme;
-    }
 
-    .orange-bg:hover {
-        background-color: @dark-orange-theme;
-    }
-
-    .orange-text {
-        color: @orange-theme;
-    }
-
-    .border-orange {
-        border-bottom: 3px solid @orange-theme;
-    }
-
-    .light-orange-text {
-        color: @light-orange-theme;
-    }
-
-    .border-light-orange {
-        border-bottom: 3px solid @light-orange-theme;
-    }
-
-    .green-bg {
-        background-color: @green-theme;
-    }
-
-    .green-text {
-        color: @green-theme;
-    }
-
-    .green-border-outline {
-        color: @green-theme !important;
-        border: 2px solid @green-theme;
-
-        &:hover {
-            color: #ffffff !important;
-            background-color: @green-theme;
-        }
-    }
-
-    .dark-text {
-        color: @dark-font-color !important;
-    }
-
-    .white-bg {
-        background-color: @light-bg;
-    }
-
-    .price-circle-green {
-        background: @green-theme;
-        width: 106px;
-        height: 106px;
-        margin: auto;
-        border-radius: 50%;
-        border: 3px solid #fff;
-        box-shadow: 0px 0px 0px 3px @green-theme;
-    }
-
-    .price-circle-orange {
-        background: @orange-theme;
-        width: 106px;
-        height: 106px;
-        margin: auto;
-        border-radius: 50%;
-        border: 3px solid #fff;
-        box-shadow: 0px 0px 0px 3px @orange-theme;
-    }
-
-    .price-circle-purple {
-        background: @purple-theme;
-        width: 106px;
-        height: 106px;
-        margin: auto;
-        border-radius: 50%;
-        border: 3px solid #fff;
-        box-shadow: 0px 0px 0px 3px @purple-theme;
-    }
-
-
-    .border-green {
-        border-bottom: 3px solid @green-theme;
-    }
-
-    .green-text:hover {
-        color: @dark-green-theme;
-    }
-
-    .green-bg:hover {
-        background-color: @dark-green-theme;
-    }
-
-
-
-    .purple-text {
-        color: @purple-theme;
-    }
-
-    .border-purple {
-        border-bottom: 3px solid @purple-theme;
-    }
-
-    .purple-border-outline {
-        color: @purple-theme !important;
-        border: 2px solid @purple-theme;
-
-        &:hover {
-            color: #ffffff !important;
-            background-color: @purple-theme;
-        }
-    }
 
 
     section {
@@ -268,6 +157,7 @@
     .lp-title {
         font-family: 'Libre Baskerville', 'Playfair Display', Georgia, serif;
         color: @dark-font-color;
+        max-width: 100%;
     }
 
     .lp-title-light {
@@ -279,6 +169,7 @@
         font-size: 20px;
         display: block;
         margin-bottom: 80px;
+        max-width: 100%;
     }
 
     h1.lp-title {
@@ -509,6 +400,7 @@
 
         .lp-item {
             padding: 3px;
+            margin-bottom: 20px;
 
             .lp-title {
                 font-family: inherit;
@@ -656,7 +548,7 @@
 
         .testimonial-content {
             text-align: left;
-            padding: 50px 50px 50px 50px;
+            padding: 30px 30px 30px 70px;
             margin-top: 40px;
             p {
                 margin-bottom: 0;
@@ -667,8 +559,24 @@
             }
         }
 
-        .owl-pagination {
-            text-align: right;
+
+        .owl-item {
+            height: 420px;
+        }
+
+        .owl-controls {
+            position: absolute;
+            bottom: 10px;
+            right: 0;
+            .owl-page {
+                span {
+                    border: 2px solid #ffffff !important;
+                }
+                &.active span,
+                &:hover span {
+                    border: 3px solid #000000 !important;
+                }
+            }
         }
 
         .image-wrapper {
@@ -771,22 +679,61 @@
         background-color: @light-gray-bg;
 
         .container {
-            min-height: 1150px;
+            min-height: 1120px;
+        }
+
+        h5.post-title {
+            font-size: 20px;
+            line-height: 33px;
+            font-weight: 500;
+            color: @dark-font-color;
+        }
+
+        h6.post-title {
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 500;
+            color: @dark-font-color;
+        }
+
+
+        .regular-post {
+            padding: 26px 35px 26px 35px;
+            margin-bottom: 23px;
+            box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.05);
         }
 
         .blog-posts {
-            
+            text-align: left;
             .post-info {
-                margin-top: -50px;
                 position: relative;
-                padding-left: 50px;
+
+
 
                 div {
                     margin-right: 20px;
+                    display: inline-block;
                 }
             }
         }
 
+        .featured-post {
+            box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.05);
+            .post-info {
+                position: relative;
+                margin-top: -50px;
+                height: 50px;
+                text-align: left;
+                padding-left: 50px;
+            }
+
+            .post-content {
+                padding-left: 50px;
+                padding-right: 50px;
+                margin-top: 25px;
+                padding-bottom: 28px;
+            }
+        }
 
         .post-img {
             img {
@@ -806,6 +753,7 @@
 
         h3 {
             color: @dark-font-color;
+            margin: 25px auto;
         }
 
         input {
@@ -970,4 +918,131 @@
 
     .strong {
         font-weight: 500;
+    } // Custom colors
+    .orange-bg {
+        background-color: @orange-theme;
     }
+
+    .orange-bg:hover {
+        background-color: @dark-orange-theme;
+    }
+
+    .orange-text {
+        color: @orange-theme;
+    }
+
+    .border-orange {
+        border-bottom: 3px solid @orange-theme;
+    }
+
+    .light-orange-text {
+        color: @light-orange-theme;
+    }
+
+    .border-light-orange {
+        border-bottom: 3px solid @light-orange-theme;
+    }
+
+    .green-bg {
+        background-color: @green-theme;
+    }
+
+    .green-text {
+        color: @green-theme;
+    }
+
+    .green-border-outline {
+        color: @green-theme !important;
+        border: 2px solid @green-theme;
+
+        &:hover {
+            color: #ffffff !important;
+            background-color: @green-theme;
+        }
+    }
+
+    .dark-text {
+        color: @dark-font-color !important;
+    }
+
+    .white-bg {
+        background-color: @light-bg;
+    }
+
+    .price-circle-green {
+        background: @green-theme;
+        width: 106px;
+        height: 106px;
+        margin: auto;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        box-shadow: 0px 0px 0px 3px @green-theme;
+    }
+
+    .price-circle-orange {
+        background: @orange-theme;
+        width: 106px;
+        height: 106px;
+        margin: auto;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        box-shadow: 0px 0px 0px 3px @orange-theme;
+    }
+
+    .price-circle-purple {
+        background: @purple-theme;
+        width: 106px;
+        height: 106px;
+        margin: auto;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        box-shadow: 0px 0px 0px 3px @purple-theme;
+    }
+
+
+    .border-green {
+        border-bottom: 3px solid @green-theme;
+    }
+
+    .green-text:hover {
+        color: @dark-green-theme;
+    }
+
+    .green-bg:hover {
+        background-color: @dark-green-theme;
+    }
+
+
+
+    .purple-text {
+        color: @purple-theme;
+    }
+
+    .border-purple {
+        border-bottom: 3px solid @purple-theme;
+    }
+
+    .purple-border-outline {
+        color: @purple-theme !important;
+        border: 2px solid @purple-theme;
+
+        &:hover {
+            color: #ffffff !important;
+            background-color: @purple-theme;
+        }
+    }
+
+
+    @media (min-width: 768px) {
+
+        #work-steps {
+            .step-item {
+                .left-block, .right-block {
+					left: 0;
+                }
+            }
+        }
+    }
+
+    
+ 
