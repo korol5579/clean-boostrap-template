@@ -46,4 +46,52 @@ $(document).ready(function() {
         singleItem: true,
     });
 
+    $('.more').on('click', function (event) {
+        event.preventDefault();
+
+        var href = $(this).attr('href') + ' .single-project',
+            portfolioList = $('#portfolio-list'),
+            content = $('#loaded-content');
+
+        portfolioList.animate({
+            'marginLeft': '-120%'
+        }, {
+            duration: 400,
+            queue: false
+        });
+        portfolioList.fadeOut(400);
+        setTimeout(function () {
+            content.load(href, function () {
+                $('#loaded-content meta').remove();
+                content.fadeIn(600);
+                $('#back-button').fadeIn(600).css({
+                    display: 'block',
+                    margin: '100px auto',
+                });
+                $('#portfolio .container').css('min-height','1000px');
+            });
+        }, 800);
+
+    });
+
+    $('#back-button').on('click', function (event) {
+        event.preventDefault();
+
+        var portfolioList = $('#portfolio-list')
+        content = $('#loaded-content');
+
+        content.fadeOut(400);
+        $('#back-button').fadeOut(400);
+        setTimeout(function () {
+            portfolioList.animate({
+                'marginLeft': '0'
+            }, {
+                duration: 400,
+                queue: false
+            });
+            portfolioList.fadeIn(600);
+            $('#portfolio .container').css('min-height','1385px');
+        }, 800);
+    });
+
 });
