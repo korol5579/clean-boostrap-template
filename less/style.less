@@ -17,7 +17,7 @@ nav.navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 50;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.25);
 
     .container {
@@ -391,6 +391,14 @@ h3.lp-title {
 
     &:hover {
         box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.05);
+        
+        .portfolio-description .four-lines {
+            bottom: unset;
+            top: 0px;
+            display: block;
+            padding-left: 0;
+            padding-right: 0;
+        }
 
         img {
             -webkit-filter: brightness(70%);
@@ -1082,7 +1090,7 @@ h3.lp-title {
 
 @media (max-width: 1199px) {
     .owl-pagination {
-        background-color: rgba(0,0,0,0.2);
+        background-color: rgba(0, 0, 0, 0.2);
         padding: 5px 0 0;
     }
 }
@@ -1112,7 +1120,6 @@ h3.lp-title {
                     vertical-align: top;
                 }
             }
-            
         }
 
         .navbar-collapse {
@@ -1133,16 +1140,34 @@ h3.lp-title {
             }
         }
         .navbar-toggle {
-            border-color: #ddd;
+            font-size: 40px;
             margin-top: 15px;
-            margin-right: 30px;
-            .icon-bar {
-                background-color: #888;
-            }
+            margin-right: 0;
         }
     }
+
+    #get-in-touch {
+        h4 {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .lp-description {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .social-icons {
+            text-align: center;
+        }
+    }
+
+    #why-select-us .row p {
+        width: 100%;
+    }
     #subscribe-to-newsletter {
-        input, button {
+        input,
+        button {
             max-width: 45%;
             font-size: 12px;
             padding: 0 10px;
